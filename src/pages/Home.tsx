@@ -18,12 +18,16 @@ const HomePage: React.FC<IHomePageProps> = (props) => {
                 </div>
                 {ExternalLinks.map((v, i) =>
                     <Link to={v.url} key={i} target="_blank" className="bg-violet-100 hover:bg-violet-200 rounded-full block py-6 items-center text-xl text-sky-900">
-                        <span className="flex justify-center">
-                            {v.iconUrl && <img src={v.iconUrl} className="mr-2 h-6 mt-1" />}
-                            <span className="md:w-32">
+                        <div className="flex justify-center">
+                            <div className="flex flex-row justify-end pr-4 w-16">
+                                <span>
+                                {v.iconUrl && <img src={v.iconUrl} className="h-6 mt-1" />}
+                                </span>
+                            </div>
+                            <div className="md:w-32">
                                 {v.title}
-                            </span>
-                        </span>
+                            </div>
+                        </div>
                     </Link>
                 )}
             </div>

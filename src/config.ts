@@ -77,6 +77,7 @@ export const ExternalLinks: ILink[] = [
     },
     {
         title: "Itaku",
+        iconUrl: "https://itaku.ee/assets/icons/itaku.svg",
         url: "https://itaku.ee/profile/pbj"
     },
     {

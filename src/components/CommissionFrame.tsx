@@ -11,7 +11,7 @@ const CommissionFrame: React.FC<ICommissionFrameProps> = (props) => {
     const [currentImage, setCurrentImage] = useState(props.type.images[0]);
 
     return (
-        <div className="bg-white drop-shadow-lg border-violet-200 mt-16 border">
+        <div className="bg-white drop-shadow-lg border-violet-200 mt-2 md:mt-16 border">
             <div className="p-4 text-lg font-semibold border-b border-violet-100 flex">
                 {props.type.title}
                 <span className="flex-grow"></span>
