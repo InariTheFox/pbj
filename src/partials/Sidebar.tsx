@@ -71,11 +71,13 @@ const Sidebar: React.FC<ISidebarProps> = (props) => {
                 </div>
 
                 {/* Copyright */}
-                <div className="px-4 text-sm text-slate-500">
-                    &copy; 2023 PBJ<br />
-                </div>
-                <div className="px-4 pb-4 text-xs text-slate-400">
-                    Developed by <a href="https://inflatofox.com" target="_blank" rel="noreferrer" className="font-medium underline">Inari</a>
+                <div>
+                    <div className="px-4 text-sm text-slate-500">
+                        &copy; 2023 PBJ<br />
+                    </div>
+                    <div className="px-4 pb-4 text-xs text-slate-400">
+                        Developed by <a href="https://inflatofox.com" target="_blank" rel="noreferrer" className="font-medium underline">Inari</a>
+                    </div>
                 </div>
             </div>
         </div>

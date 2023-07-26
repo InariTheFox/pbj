@@ -10,11 +10,11 @@ export interface IPageContainerProps {
 
 const PageContainer: React.FC<IPageContainerProps> = (props) => {
     return (
-        <div className="flex flex-col flex-grow h-screen overflow-hidden">
+        <div className="flex flex-col flex-grow h-screen">
             <Header {...props} />
-            <div className="flex flex-row bg-violet-50 flex-grow overflow-hidden">
+            <div className="flex flex-row bg-violet-50 flex-grow">
                 <Sidebar {...props} />
-                <div className="flex-grow pb-16 overflow-y-auto">
+                <div className="flex-grow pb-16">
                         {props.children}
                 </div>
             </div>
