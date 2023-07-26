@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Home';
+import PageContainer from './layouts/PageContainer';
+import AboutPage from './pages/About';
+import CommissionsPage from './pages/Commissions';
+import NotFoundPage from './pages/NotFound';
 
-function App() {
+const App: React.FC = () => {
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<PageContainer {...{ sidebarOpen: sidebarOpen, setSidebarOpen: setSidebarOpen }}><HomePage {...{ sidebarOpen: sidebarOpen }} /></PageContainer>} />
+      {/* Add new routes below here only! */}
+      <Route path="about" element={<PageContainer {...{ sidebarOpen: sidebarOpen, setSidebarOpen: setSidebarOpen }}><AboutPage /></PageContainer>} />
+      <Route path="commissions" element={<PageContainer {...{ sidebarOpen: sidebarOpen, setSidebarOpen: setSidebarOpen }}><CommissionsPage /></PageContainer>} />
+      {/* Add new routes above here only! */}
+      <Route path="*" element={<PageContainer {...{ sidebarOpen: sidebarOpen, setSidebarOpen: setSidebarOpen }}><NotFoundPage /></PageContainer>} />
+    </Routes>
   );
 }
 

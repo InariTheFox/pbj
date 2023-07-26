@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html, body, #root {
+    height: 100%;
+    overflow: hidden;
+}
+
+.anim-wobble {
+	-webkit-animation: anim-wobble 2.8s both infinite;
+	        animation: anim-wobble 2.8s both infinite;
+  text-align: center;
+}
+
+/* Keyframes for the wobble animation */
+
+@keyframes anim-wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50%50%;
+    transform-origin: 50%50%;
+  }
+  7.5% {
+    -webkit-transform: translateX(-30px)rotate(-6deg);
+    transform: translateX(-30px)rotate(-6deg);
+  }
+  15% {
+    -webkit-transform: translateX(15px)rotate(6deg);
+    transform: translateX(15px)rotate(6deg);
+  }
+  22.5% {
+    -webkit-transform: translateX(-15px)rotate(-3.6deg);
+    transform: translateX(-15px)rotate(-3.6deg);
+  }
+  30% {
+    -webkit-transform: translateX(9px)rotate(2.4deg);
+    transform: translateX(9px)rotate(2.4deg);
+  }
+  37.5% {
+    -webkit-transform: translateX(-6px)rotate(-1.2deg);
+    transform: translateX(-6px)rotate(-1.2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-6px)rotate(0deg);
+    transform: translateX(-6px)rotate(0deg);
+  }
+}
