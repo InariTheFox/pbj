@@ -1,11 +1,11 @@
 /* Add your file imports here... */
 import twitterLogo from "./images/twitter-logo.png";
-import fullColourOne from "./images/full_colour/JaiyLockheed.jpg";
-import fullColourTwo from "./images/full_colour/Bubble.jpg";
+import fullColourOne from "./images/full_colour/Aureo.jpg";
+import fullColourTwo from "./images/full_colour/JayNoPins.jpg";
 import fullColourThree from "./images/full_colour/Ellie.jpg";
-import fullColourFour from "./images/full_colour/JayNoPins.jpg";
+import fullColourFour from "./images/full_colour/JaiyLockheed.jpg";
 import fullColourFive from "./images/full_colour/NachieSFW.jpg";
-import fullColourSix from "./images/full_colour/Aureo.jpg";
+import fullColourSix from "./images/full_colour/Bubble.jpg";
 import fullColourSeven from "./images/full_colour/Sige.jpg";
 import procreateOne from "./images/procreate/sampleOne.jpg";
 import procreateTwo from "./images/procreate/sampleTwo.jpg";
