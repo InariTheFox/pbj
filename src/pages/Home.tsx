@@ -17,7 +17,7 @@ const HomePage: React.FC<IHomePageProps> = (props) => {
                     <div className="font-thin text-4xl mt-4">PBJ Art</div>
                 </div>
                 {ExternalLinks.map((v, i) =>
-                    <Link to={v.url} key={i} target="_blank" className="bg-violet-100 hover:bg-violet-200 rounded-full block py-6 items-center text-xl text-sky-900">
+                    <Link to={v.url} key={i} target="_blank" rel={(v.isRel == true ?? false) ? "me" : undefined} className="bg-violet-100 hover:bg-violet-200 rounded-full block py-6 items-center text-xl text-sky-900">
                         <div className="flex justify-center">
                             <div className="flex flex-row justify-end pr-4 w-16">
                                 <span>

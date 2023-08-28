@@ -23,6 +23,7 @@ import iconFive from "./images/icons/Thunder.jpg";
 export interface ILink {
     title: string;
     iconUrl?: string;
+    isRel?: boolean;
     url: string;
 };
 
@@ -68,7 +69,8 @@ export const ExternalLinks: ILink[] = [
     {
         title: "Mastodon",
         iconUrl: "https://blimps.xyz/favicon.ico",
-        url: "https://blimps.xyz/@pbj"
+        url: "https://blimps.xyz/@pbj",
+        isRel: true
     },
     {
         title: "Telegram",
@@ -94,6 +96,11 @@ export const ExternalLinks: ILink[] = [
         title: "FurAffinity",
         iconUrl: "https://www.furaffinity.net/favicon.ico",
         url: "https://furaffinity.net/user/zorua"
+    },
+    {
+        title: "BlueSky",
+        iconUrl: "https://bsky.app/static/favicon-16x16.png",
+        url: "https://bsky.app/profile/pbjart.bsky.social"
     }
 ];
 
